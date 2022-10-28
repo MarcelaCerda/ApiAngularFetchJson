@@ -1,0 +1,18 @@
+<img src="{{data.imagen}}" alt="">
+<p>Nombre: {{data.nombre}}</p>
+<p>Apellido: {{data.apellido}}</p>
+<p>Email: {{data.email}}</p>
+<p>Celular:{{data.celular}}</p>
+<p>Ciudad: {{data.ciudad}}</p>
+<p>Pais: {{data.pais}}</p>
+<h2>Experiencia Laboral</h2>
+<ul  >
+    <li  *ngFor="let experiencia of data.experienciaLab">
+        <h3>{{experiencia.empresa}}</h3>
+        <p>{{experiencia.periodo}}</p>
+        <p>{{experiencia.tareasRealizada}}</p>
+    </li>
+
+</ul>
+
+
