@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main.component.css']
 })
 export class MainComponent implements OnInit {
-  data={
+  datos={
     "nombre":"",
     "apellido":"",
     "email":"",
@@ -26,7 +26,7 @@ export class MainComponent implements OnInit {
     fetch(url)
       .then(response => response.json())
       .then(data => {
-         this.data=data 
+         this.datos=data 
          console.log(data)   
          
          
